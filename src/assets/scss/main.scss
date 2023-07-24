@@ -5,13 +5,10 @@
 @import './sass-utils/variables';
 @import './sass-utils/disable-mob-hover';
 @import './sass-utils/global';
+@import './sass-utils/shiny-btn';
 
 // Fonts
 @import './fonts/fonts';
-
-// UI
-// UI / Buttons
-@import './sass-utils/epic-btn.scss';
 
 //Components
 @import './components/overlay';
