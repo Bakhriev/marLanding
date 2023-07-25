@@ -26,6 +26,10 @@
 
 	&__info {
 		max-width: 630px;
+		@media screen and (max-width: $medium) {
+			max-width: 900px;
+			text-align: center;
+		}
 	}
 
 	&__title {
@@ -68,6 +72,9 @@
 		display: flex;
 		align-items: center;
 		gap: 126px;
+		@media screen and (max-width: $medium) {
+			justify-content: space-around;
+		}
 		@media screen and (max-width: 600px) {
 			gap: 40px;
 			justify-content: center;

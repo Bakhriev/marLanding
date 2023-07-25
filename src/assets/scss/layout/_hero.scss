@@ -26,6 +26,9 @@
 		max-width: 600px;
 		display: flex;
 		flex-direction: column;
+		@media screen and (max-width: $medium) {
+			max-width: 900px;
+		}
 		@media screen and (max-width: 650px) {
 			align-items: center;
 		}
@@ -37,6 +40,9 @@
 		font-size: 72px;
 		font-weight: 700;
 		line-height: 120.4%;
+		@media screen and (max-width: $medium) {
+			text-align: center;
+		}
 		@media screen and (max-width: 650px) {
 			margin-bottom: 20px;
 			text-align: center;
@@ -51,6 +57,10 @@
 		color: $black;
 		font-size: 30px;
 		line-height: 120.4%;
+		@media screen and (max-width: $medium) {
+			text-align: center;
+			max-width: 100%;
+		}
 		@media screen and (max-width: 650px) {
 			max-width: 250px;
 			margin-bottom: 20px;
@@ -66,6 +76,10 @@
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 120.4%;
+		@media screen and (max-width: $medium) {
+			text-align: center;
+			max-width: 100%;
+		}
 		@media screen and (max-width: 650px) {
 			max-width: 247px;
 			margin-bottom: 22px;
@@ -80,7 +94,9 @@
 		color: #fdfbfb;
 		font-size: 32px;
 		line-height: 120.4%;
-
+		@media screen and (max-width: $medium) {
+			margin: 0 auto;
+		}
 		@media screen and (max-width: 650px) {
 			padding: 8px 12px;
 			font-size: 11.73px;
@@ -90,17 +106,75 @@
 
 	&__img {
 		position: absolute;
-		right: 10px;
-		top: -110px;
+		right: 140px;
+		top: 60px;
+		width: 560px;
+		height: 560px;
 		flex-shrink: 0;
 		@media screen and (max-width: 1250px) {
-			width: 500px;
-			top: 50px;
-			right: -40px;
+			top: 100px;
+			right: 0px;
 		}
+		@media screen and (max-width: $medium) {
+			width: 400px;
+			height: 400px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			width: 561px;
+			height: 561px;
+			border-radius: 50%;
+			background: transparent;
+			border: 15px solid #feacae;
+			top: 1px;
+			border-color: transparent #feacae #feacae;
+			@media screen and (max-width: $medium) {
+				width: 400px;
+				height: 400px;
+			}
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			width: 561px;
+			height: 561px;
+			border-radius: 50%;
+			background: transparent;
+			border: 15px solid #feacae;
+			top: 1px;
+			z-index: -2;
+			border-color: #feacae #feacae;
+			@media screen and (max-width: $medium) {
+				width: 400px;
+				height: 400px;
+			}
+		}
+		.ellipse {
+			position: absolute;
+			z-index: -1;
+		}
+		.hero__logo {
+			position: absolute;
+			z-index: -1;
+			width: 700px;
+			right: 130px;
+		}
+		.hero__girl {
+			position: absolute;
+			z-index: -1;
+			top: -251px;
+			@media screen and (max-width: $medium) {
+				top: -212px;
+			}
+		}
+
 		@media screen and (max-width: $medium) {
 			position: relative;
 			order: -1;
+			margin: 0 auto;
 		}
 		@media screen and (max-width: 650px) {
 			display: none;
@@ -140,7 +214,7 @@
 }
 .star-1 {
 	@media screen and (max-width: $medium) {
-		left: 300px;
+		left: 650px;
 		top: 6px;
 	}
 	left: 293px;
@@ -151,8 +225,8 @@
 	bottom: -25px;
 	left: 670px;
 	@media screen and (max-width: $medium) {
-		top: 100px;
-		left: 50px;
+		top: 50px;
+		left: 70px;
 	}
 	@media screen and (max-width: 450px) {
 		left: 10px;
@@ -163,7 +237,7 @@
 	right: 142px;
 	top: -82px;
 	@media screen and (max-width: $medium) {
-		right: 200px;
+		right: 50px;
 		top: 200px;
 	}
 	@media screen and (max-width: 780px) {
@@ -174,8 +248,8 @@
 	bottom: 169px;
 	left: 400px;
 	@media screen and (max-width: $medium) {
-		top: 500px;
-		left: 150px;
+		top: 300px;
+		left: 30px;
 	}
 	@media screen and (max-width: 650px) {
 		top: 250px;
