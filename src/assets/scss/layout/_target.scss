@@ -1,0 +1,84 @@
+.target {
+	background-color: #fff;
+	padding: 100px 0;
+	@media screen and (max-width: $tablet) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 68px;
+		color: $black;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 120.4%;
+		@media screen and (max-width: $medium) {
+			font-size: 40px;
+		}
+		@media screen and (max-width: 650px) {
+			margin-bottom: 20px;
+			font-size: 28px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 40px;
+		@media screen and (max-width: $tablet) {
+			flex-direction: column;
+		}
+	}
+
+	&__info {
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		@media screen and (max-width: $large) {
+			gap: 20px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		@media screen and (max-width: $large) {
+			gap: 18px;
+		}
+		@media screen and (max-width: $medium) {
+			font-size: 20px;
+			img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+		@media screen and (max-width: $large) {
+			font-size: 16px;
+		}
+		color: #2c2a2a;
+		max-width: 580px;
+
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 120.4%;
+	}
+
+	&__img {
+		@media screen and (max-width: $large) {
+			width: 400px;
+		}
+		@media screen and (max-width: $medium) {
+			width: 350px;
+		}
+		@media screen and (max-width: 420px) {
+			width: 250px;
+		}
+	}
+}

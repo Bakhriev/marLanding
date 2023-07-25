@@ -1,0 +1,125 @@
+.review {
+	padding: 100px 0;
+	background: linear-gradient(
+		360deg,
+		#feacae 0%,
+		rgba(254, 172, 174, 0) 85.21%
+	);
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 60px;
+		color: $black;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 120.4%;
+	}
+
+	&__subtitle {
+		color: $black;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 120.4%;
+	}
+
+	&__persons {
+		margin-top: 70px;
+	}
+}
+.row {
+	display: flex;
+}
+.review-person {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	overflow: hidden;
+
+	&__img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.review-person-1 {
+	position: relative;
+	top: 8px;
+	left: 120px;
+}
+.review-person-2 {
+	position: relative;
+	top: -30px;
+	left: 220px;
+}
+.review-person-3 {
+	position: relative;
+	top: -40px;
+	left: 300px;
+}
+.review-person-4 {
+	position: relative;
+	top: -42px;
+	left: 440px;
+}
+.review-person-5 {
+	position: relative;
+	top: 65px;
+	left: 70px;
+}
+.review-person-6 {
+	position: relative;
+	top: 25px;
+	left: 130px;
+}
+.review-person-7 {
+	position: relative;
+	top: -5px;
+	left: 190px;
+}
+.review-person-8 {
+	position: relative;
+	top: -40px;
+	left: 290px;
+}
+.review-person-9 {
+	position: relative;
+	top: -30px;
+	left: 440px;
+}
+.review-person-10 {
+	position: relative;
+	top: 100px;
+	left: 190px;
+}
+.review-person-11 {
+	position: relative;
+	top: 68px;
+	left: 257px;
+}
+.review-person-12 {
+	position: relative;
+	top: 19px;
+	left: 334px;
+}
+.review-person-13 {
+	position: relative;
+	top: -10px;
+	left: 430px;
+}
+.review-person-14 {
+	position: relative;
+	top: 25px;
+	left: 480px;
+}
+.review-person-15 {
+	position: relative;
+	top: 70px;
+	left: 570px;
+}
+.review-person-16 {
+	position: relative;
+	top: 25px;
+	left: 640px;
+}

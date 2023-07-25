@@ -63,3 +63,52 @@ const dropdownInit = () => {
 	}
 }
 dropdownInit()
+
+const modal1 = document.querySelector('.modal-1')
+const modal2 = document.querySelector('.modal-2')
+const modal3 = document.querySelector('.modal-3')
+const modal4 = document.querySelector('.modal-4')
+
+const cardStandard = document.querySelector('[data-card-standard]')
+const cardStandardPlus = document.querySelector('[data-card-standard-plus]')
+const cardVip = document.querySelector('[data-card-vip]')
+const cardPersonal = document.querySelector('[data-card-personal]')
+
+const overlay = document.querySelector('.overlay')
+const closeBtns = document.querySelectorAll('.modal-close')
+const modalInners = document.querySelector('.modal__inner')
+
+closeBtns.forEach(btn => {
+	btn.addEventListener('click', () => {
+		modal1.classList.remove('active')
+		modal2.classList.remove('active')
+		modal3.classList.remove('active')
+		modal4.classList.remove('active')
+		overlay.classList.remove('active')
+		document.body.classList.remove('lock')
+	})
+})
+
+cardStandard.addEventListener('click', () => {
+	modal1.classList.add('active')
+	overlay.classList.add('active')
+	document.body.classList.add('lock')
+})
+
+cardStandardPlus.addEventListener('click', () => {
+	modal2.classList.add('active')
+	overlay.classList.add('active')
+	document.body.classList.add('lock')
+})
+
+cardVip.addEventListener('click', () => {
+	modal3.classList.add('active')
+	overlay.classList.add('active')
+	document.body.classList.add('lock')
+})
+
+cardPersonal.addEventListener('click', () => {
+	modal4.classList.add('active')
+	overlay.classList.add('active')
+	document.body.classList.add('lock')
+})

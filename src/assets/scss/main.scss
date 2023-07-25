@@ -6,6 +6,7 @@
 @import './sass-utils/disable-mob-hover';
 @import './sass-utils/global';
 @import './sass-utils/shiny-btn';
+@import './sass-utils/epic-btn';
 
 // Fonts
 @import './fonts/fonts';
@@ -19,3 +20,14 @@
 @import './layout/footer';
 @import './layout/hero';
 @import './layout/about';
+@import './layout/target';
+@import './layout/program';
+@import './layout/review';
+@import './layout/contact';
+@import './layout/modal';
+
+body {
+	&.lock {
+		overflow: hidden;
+	}
+}
