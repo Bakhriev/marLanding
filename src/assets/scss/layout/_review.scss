@@ -1,5 +1,8 @@
 .review {
 	padding: 100px 0;
+	@media screen and (max-width: $tablet) {
+		padding-top: 30px;
+	}
 	background: linear-gradient(
 		360deg,
 		#feacae 0%,
@@ -14,6 +17,10 @@
 		font-size: 48px;
 		font-weight: 700;
 		line-height: 120.4%;
+		@media screen and (max-width: $tablet) {
+			margin-bottom: 20px;
+			font-size: 28px;
+		}
 	}
 
 	&__subtitle {
@@ -21,6 +28,9 @@
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 120.4%;
+		@media screen and (max-width: $tablet) {
+			font-size: 16px;
+		}
 	}
 
 	&__persons {
@@ -33,6 +43,14 @@
 .review-person {
 	width: 130px;
 	height: 130px;
+	@media screen and (max-width: $medium) {
+		width: 100px;
+		height: 100px;
+	}
+	@media screen and (max-width: $medium) {
+		width: 60px;
+		height: 60px;
+	}
 	border-radius: 50%;
 	overflow: hidden;
 
@@ -47,79 +65,233 @@
 	position: relative;
 	top: 8px;
 	left: 120px;
+	@media screen and (max-width: $large) {
+		top: 8px;
+		left: 60px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 30px;
+	}
+	@media screen and (max-width: 450px) {
+		left: 15px;
+		top: -20px;
+	}
 }
 .review-person-2 {
 	position: relative;
 	top: -30px;
 	left: 220px;
+	@media screen and (max-width: $large) {
+		top: -30px;
+		left: 110px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 60px;
+	}
+	@media screen and (max-width: 450px) {
+		top: -50px;
+		left: 120px;
+	}
 }
 .review-person-3 {
 	position: relative;
 	top: -40px;
 	left: 300px;
+	@media screen and (max-width: $large) {
+		top: -40px;
+		left: 150px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 75px;
+	}
+	@media screen and (max-width: 450px) {
+		left: 155px;
+		top: -40px;
+	}
 }
 .review-person-4 {
 	position: relative;
 	top: -42px;
 	left: 440px;
+	@media screen and (max-width: $large) {
+		left: 220px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 110px;
+	}
+	@media screen and (max-width: 450px) {
+		top: 0;
+		left: -80px;
+	}
 }
 .review-person-5 {
 	position: relative;
 	top: 65px;
 	left: 70px;
+	@media screen and (max-width: $large) {
+		left: 35px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 17px;
+	}
+	@media screen and (max-width: 450px) {
+		left: 20px;
+		top: 3px;
+	}
 }
 .review-person-6 {
 	position: relative;
 	top: 25px;
 	left: 130px;
+	@media screen and (max-width: $large) {
+		left: 65px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 32px;
+	}
+	@media screen and (max-width: 450px) {
+		top: 50px;
+	}
 }
 .review-person-7 {
 	position: relative;
 	top: -5px;
 	left: 190px;
+	@media screen and (max-width: $large) {
+		left: 95px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 45px;
+	}
+	@media screen and (max-width: 450px) {
+	}
 }
 .review-person-8 {
 	position: relative;
 	top: -40px;
 	left: 290px;
+	@media screen and (max-width: $large) {
+		left: 145px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 75px;
+	}
+	@media screen and (max-width: 450px) {
+		top: -20px;
+	}
 }
 .review-person-9 {
 	position: relative;
 	top: -30px;
 	left: 440px;
+	@media screen and (max-width: $large) {
+		left: 220px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 110px;
+	}
+	@media screen and (max-width: 450px) {
+		top: 210px;
+		left: 0;
+	}
 }
 .review-person-10 {
 	position: relative;
 	top: 100px;
 	left: 190px;
+	@media screen and (max-width: $large) {
+		left: 95px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 45px;
+	}
+	@media screen and (max-width: 450px) {
+		top: 130px;
+	}
 }
 .review-person-11 {
 	position: relative;
 	top: 68px;
 	left: 257px;
+	@media screen and (max-width: $large) {
+		left: 128px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 65px;
+	}
+	@media screen and (max-width: 450px) {
+		left: 40px;
+	}
 }
 .review-person-12 {
 	position: relative;
 	top: 19px;
 	left: 334px;
+	@media screen and (max-width: $large) {
+		left: 167px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 85px;
+	}
+	@media screen and (max-width: 450px) {
+		left: 60px;
+	}
 }
 .review-person-13 {
 	position: relative;
 	top: -10px;
 	left: 430px;
+	@media screen and (max-width: $large) {
+		left: 215px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 110px;
+	}
+	@media screen and (max-width: 450px) {
+		left: 90px;
+	}
 }
 .review-person-14 {
 	position: relative;
 	top: 25px;
 	left: 480px;
+	@media screen and (max-width: $large) {
+		left: 240px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 120px;
+	}
+	@media screen and (max-width: 450px) {
+		left: -240px;
+		top: 37px;
+	}
 }
 .review-person-15 {
 	position: relative;
 	top: 70px;
 	left: 570px;
+	@media screen and (max-width: $large) {
+		left: 285px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 190px;
+	}
+	@media screen and (max-width: 450px) {
+		left: 160px;
+	}
 }
 .review-person-16 {
 	position: relative;
 	top: 25px;
 	left: 640px;
+	@media screen and (max-width: $large) {
+		left: 320px;
+	}
+	@media screen and (max-width: $medium) {
+		left: 200px;
+	}
+	@media screen and (max-width: 450px) {
+		left: 200px;
+		top: 13px;
+	}
 }
