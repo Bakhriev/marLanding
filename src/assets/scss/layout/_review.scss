@@ -12,16 +12,12 @@
 	}
 
 	&__title {
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 		color: $black;
 		font-size: 48px;
 		font-weight: 700;
 		line-height: 120.4%;
-		@media screen and (max-width: $medium) {
-			margin-bottom: 20px;
-		}
 		@media screen and (max-width: $tablet) {
-			margin-bottom: 20px;
 			font-size: 28px;
 		}
 	}
@@ -51,7 +47,7 @@
 		width: 100px;
 		height: 100px;
 	}
-	@media screen and (max-width: $tablet) {
+	@media screen and (max-width: 650px) {
 		width: 60px;
 		height: 60px;
 	}
