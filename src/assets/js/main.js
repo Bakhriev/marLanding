@@ -74,7 +74,7 @@ const cardStandardPlus = document.querySelector('[data-card-standard-plus]')
 const cardVip = document.querySelector('[data-card-vip]')
 const cardPersonal = document.querySelector('[data-card-personal]')
 
-const overlay = document.querySelector('.overlay')
+const overlay1 = document.querySelector('.overlay1')
 const closeBtns = document.querySelectorAll('.modal-close')
 const modalInners = document.querySelector('.modal__inner')
 
@@ -84,32 +84,32 @@ closeBtns.forEach(btn => {
 		modal2.classList.remove('active')
 		modal3.classList.remove('active')
 		modal4.classList.remove('active')
-		overlay.classList.remove('active')
+		overlay1.classList.remove('active')
 		document.body.classList.remove('lock')
 	})
 })
 
 cardStandard.addEventListener('click', () => {
 	modal1.classList.add('active')
-	overlay.classList.add('active')
+	overlay1.classList.add('active')
 	document.body.classList.add('lock')
 })
 
 cardStandardPlus.addEventListener('click', () => {
 	modal2.classList.add('active')
-	overlay.classList.add('active')
+	overlay1.classList.add('active')
 	document.body.classList.add('lock')
 })
 
 cardVip.addEventListener('click', () => {
 	modal3.classList.add('active')
-	overlay.classList.add('active')
+	overlay1.classList.add('active')
 	document.body.classList.add('lock')
 })
 
 cardPersonal.addEventListener('click', () => {
 	modal4.classList.add('active')
-	overlay.classList.add('active')
+	overlay1.classList.add('active')
 	document.body.classList.add('lock')
 })
 
@@ -125,12 +125,13 @@ reviews.forEach(review => {
 			video.load()
 		})
 		videoModal.classList.add('active')
-		overlay.classList.add('active')
+		overlay1.classList.add('active')
 	})
 })
 
-overlay.addEventListener('click', () => {
+overlay1.addEventListener('click', () => {
 	videoModal.classList.remove('active')
+	overlay1.classList.remove('active')
 	videos.forEach(video => {
 		video.pause()
 	})
