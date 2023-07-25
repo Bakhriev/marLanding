@@ -43,6 +43,7 @@
 .review-person {
 	width: 130px;
 	height: 130px;
+	cursor: pointer;
 	@media screen and (max-width: $medium) {
 		width: 100px;
 		height: 100px;

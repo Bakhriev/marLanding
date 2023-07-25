@@ -112,3 +112,34 @@ cardPersonal.addEventListener('click', () => {
 	overlay.classList.add('active')
 	document.body.classList.add('lock')
 })
+
+const videos = document.querySelectorAll('[data-modal-video]')
+const videoModal = document.querySelector('.video-modal')
+const reviews = document.querySelectorAll('[data-review]')
+
+reviews.forEach(review => {
+	review.addEventListener('click', () => {
+		const index = review.dataset.index
+		videos.forEach(video => {
+			video.src = `assets/video/${index}.mp4`
+			video.load()
+		})
+		videoModal.classList.add('active')
+		overlay.classList.add('active')
+	})
+})
+
+overlay.addEventListener('click', () => {
+	videoModal.classList.remove('active')
+	videos.forEach(video => {
+		video.pause()
+	})
+})
+// assets/video/rew16.mp4
+videos.forEach(video => {
+	video.addEventListener('click', () => {
+		if (video.paused) {
+			video.play()
+		} else video.pause()
+	})
+})

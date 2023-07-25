@@ -32,6 +32,7 @@ const path = {
 		css: distPath + 'assets/css',
 		js: distPath + 'assets/js',
 		img: distPath + 'assets/img',
+		video: distPath + 'assets/video',
 		svg: distPath + 'assets/img/svg',
 		vendors: distPath + 'assets/vendors',
 		fonts: distPath + 'assets/fonts',
@@ -41,6 +42,7 @@ const path = {
 		css: srcPath + 'assets/scss/**/*.scss',
 		js: srcPath + 'assets/js/*.js',
 		img: srcPath + 'assets/img/*.{jpg,jpeg,png,svg}',
+		video: srcPath + 'assets/video/**/*.mp4',
 		svg: srcPath + 'assets/img/svg/**/*.svg',
 		vendors: srcPath + 'assets/vendors/**/*.{css,js}',
 		fonts: srcPath + 'assets/fonts/**/*',
@@ -161,6 +163,10 @@ function img() {
 	return src(path.src.img).pipe(dest(path.build.img))
 }
 
+function video() {
+	return src(path.src.video).pipe(dest(path.build.video))
+}
+
 function webpImg() {
 	return src(path.src.img)
 		.pipe(webp())
@@ -235,7 +241,7 @@ function prod(done) {
 
 const dev = series(
 	clean,
-	parallel(html, css, js, img, webpImg, svg, vendors, fonts),
+	parallel(html, css, js, img, webpImg, svg, video, vendors, fonts),
 	serve
 )
 const build = series(
@@ -246,6 +252,7 @@ const build = series(
 		cssMinify,
 		jsMinify,
 		imgMinify,
+		video,
 		webpImg,
 		svg,
 		vendors,
@@ -261,6 +268,7 @@ function watchFiles() {
 	watch([path.src.css], css)
 	watch([path.src.js], js)
 	watch([path.src.img], img)
+	watch([path.src.video], video)
 	watch([path.src.img], webp)
 	watch([path.src.svg], svg)
 	watch([path.src.vendors], vendors)
