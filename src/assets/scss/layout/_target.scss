@@ -49,6 +49,10 @@
 		display: flex;
 		align-items: center;
 		gap: 40px;
+		img {
+			width: 40px;
+			height: 40px;
+		}
 		@media screen and (max-width: $large) {
 			gap: 18px;
 		}
