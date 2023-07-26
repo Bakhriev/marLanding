@@ -72,13 +72,22 @@
 			gap: 20px;
 		}
 	}
-
+	&__box {
+		background-color: #fff;
+		padding-top: 14px;
+		padding-right: 9px;
+		padding-left: 17px;
+		padding-bottom: 14px;
+		border-radius: 7px;
+		color: #000;
+	}
 	&__link {
 		color: #fff;
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 120.4%;
 		transition: color 150ms ease;
+		background-color: transparent;
 		@media screen and (max-width: 600px) {
 			font-size: 14px;
 		}
@@ -102,11 +111,10 @@
 		flex-direction: column;
 		gap: 17px;
 		width: 335px;
+		background-color: transparent;
 		@media screen and (max-width: 600px) {
 			width: 300px;
 		}
-		border: 1px solid #f8535a;
-		background: #fff;
 		padding: 15px;
 		padding-bottom: 20px;
 	}

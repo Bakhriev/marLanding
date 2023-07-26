@@ -9,6 +9,39 @@
 		rgba(254, 172, 174, 0) 85.21%
 	);
 	&__container {
+		position: relative;
+	}
+	&__star {
+		position: absolute;
+		fill: #feacae;
+		width: 40px;
+		height: 40px;
+		&:first-child {
+			top: 150px;
+		}
+		&:last-child {
+			right: 100px;
+			top: 100px;
+		}
+		&:nth-child(2) {
+			left: 50px;
+			top: 600px;
+		}
+		&:nth-child(3) {
+			left: auto;
+			right: 0;
+			top: 600px;
+		}
+		&:nth-child(4) {
+			left: auto;
+			right: 0;
+			top: 400px;
+		}
+		&:nth-child(5) {
+			left: auto;
+			right: 200px;
+			top: 300px;
+		}
 	}
 
 	&__title {
@@ -34,10 +67,21 @@
 
 	&__persons {
 		margin-top: 70px;
+		@media screen and (max-width: 650px) {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
 	}
 }
 .row {
 	display: flex;
+	@media screen and (max-width: 650px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: space-evenly;
+	}
 }
 .review-person {
 	width: 130px;
@@ -48,8 +92,10 @@
 		height: 100px;
 	}
 	@media screen and (max-width: 650px) {
-		width: 60px;
-		height: 60px;
+		width: 100px;
+		height: 100px;
+		left: 0 !important;
+		top: 0 !important;
 	}
 	border-radius: 50%;
 	overflow: hidden;
@@ -72,7 +118,7 @@
 	@media screen and (max-width: $medium) {
 		left: 30px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
 		left: 15px;
 		top: -20px;
 	}
@@ -86,11 +132,11 @@
 		left: 110px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 60px;
-	}
-	@media screen and (max-width: 450px) {
-		top: -50px;
 		left: 120px;
+	}
+	@media screen and (max-width: 830px) {
+		top: -50px;
+		left: 150px;
 	}
 }
 .review-person-3 {
@@ -102,10 +148,10 @@
 		left: 150px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 75px;
+		left: 170px;
 	}
-	@media screen and (max-width: 450px) {
-		left: 155px;
+	@media screen and (max-width: 830px) {
+		left: 255px;
 		top: -40px;
 	}
 }
@@ -117,11 +163,11 @@
 		left: 220px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 110px;
+		left: 300px;
 	}
-	@media screen and (max-width: 450px) {
-		top: 0;
-		left: -80px;
+	@media screen and (max-width: 830px) {
+		top: 40px;
+		left: -150px;
 	}
 }
 .review-person-5 {
@@ -134,7 +180,7 @@
 	@media screen and (max-width: $medium) {
 		left: 17px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
 		left: 20px;
 		top: 3px;
 	}
@@ -149,7 +195,7 @@
 	@media screen and (max-width: $medium) {
 		left: 32px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
 		top: 50px;
 	}
 }
@@ -161,9 +207,12 @@
 		left: 95px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 45px;
+		left: 75px;
+		top: 25px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
+		left: 170px;
+		top: -20px;
 	}
 }
 .review-person-8 {
@@ -174,10 +223,11 @@
 		left: 145px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 75px;
+		left: 125px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
 		top: -20px;
+		left: 220px;
 	}
 }
 .review-person-9 {
@@ -188,11 +238,12 @@
 		left: 220px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 110px;
+		left: 180px;
+		top: 0;
 	}
-	@media screen and (max-width: 450px) {
-		top: 210px;
-		left: 0;
+	@media screen and (max-width: 830px) {
+		top: 280px;
+		left: 80px;
 	}
 }
 .review-person-10 {
@@ -205,8 +256,9 @@
 	@media screen and (max-width: $medium) {
 		left: 45px;
 	}
-	@media screen and (max-width: 450px) {
-		top: 130px;
+	@media screen and (max-width: 830px) {
+		top: 60px;
+		left: 0;
 	}
 }
 .review-person-11 {
@@ -217,9 +269,9 @@
 		left: 128px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 65px;
+		left: 85px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
 		left: 40px;
 	}
 }
@@ -231,9 +283,9 @@
 		left: 167px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 85px;
+		left: 135px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
 		left: 60px;
 	}
 }
@@ -245,10 +297,11 @@
 		left: 215px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 110px;
+		left: 210px;
+		top: 50px;
 	}
-	@media screen and (max-width: 450px) {
-		left: 90px;
+	@media screen and (max-width: 830px) {
+		left: 200px;
 	}
 }
 .review-person-14 {
@@ -259,10 +312,10 @@
 		left: 240px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 120px;
+		left: 280px;
 	}
-	@media screen and (max-width: 450px) {
-		left: -240px;
+	@media screen and (max-width: 830px) {
+		left: -20px;
 		top: 37px;
 	}
 }
@@ -274,9 +327,10 @@
 		left: 285px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 190px;
+		left: 250px;
+		top: 80px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
 		left: 160px;
 	}
 }
@@ -288,10 +342,11 @@
 		left: 320px;
 	}
 	@media screen and (max-width: $medium) {
-		left: 200px;
+		left: 300px;
+		top: 70px;
 	}
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 830px) {
 		left: 200px;
-		top: 13px;
+		top: 83px;
 	}
 }
