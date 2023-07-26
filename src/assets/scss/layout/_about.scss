@@ -1,8 +1,13 @@
 .about {
+	position: relative;
+
 	padding: 100px 0;
+	@media screen and (max-width: $medium) {
+		padding-bottom: 0;
+	}
 	@media screen and (max-width: $tablet) {
 		padding: 30px 0;
-		padding-top: 30px;
+		padding-bottom: 0;
 	}
 	background: $roze-light;
 	@media screen and (max-width: 650px) {
@@ -18,14 +23,37 @@
 	}
 
 	&__img {
-		margin-left: -100px;
-		@media screen and (max-width: $tablet) {
-			margin-left: -40px;
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		width: 500px;
+		height: 800px;
+		@media screen and (max-width: $large) {
+			height: 600px;
+			left: -100px;
+		}
+		@media screen and (max-width: $medium) {
+			position: relative;
+			margin: 0 auto;
+			margin-top: 50px;
+			left: 0;
+		}
+		@media screen and (max-width: 600px) {
+			height: 350px;
+			width: 300px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 
 	&__info {
+		position: relative;
+		z-index: 2;
 		max-width: 630px;
+		margin-left: auto;
 		@media screen and (max-width: $medium) {
 			max-width: 900px;
 			text-align: center;
